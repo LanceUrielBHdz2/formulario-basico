@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario web basico</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Formulario web basico</h1>
+    <hr>
+    <form action="#">
+        <fieldset>
+            <legend>Entradas de usuario</legend>
+            <div>
+                <label for="usuario">Nombre:</label>
+                <input id="usuario" type="text" name="usuario" size="20" maxsize="30" value="Escribe tu nombre" >
+            </div><br>
+            <div>
+                <label for="email">Direccion email:</label>
+                <input id="email" type="text" name="email" size="20" maxsize="30" value="Escribe tu email">
+            </div><br>
+            <div>
+                <label for="semestre">Semestre</label>
+                <select name="semestre">
+                    <option value="er">Primer semestre</option>
+                    <option value="seg">Segundo semestre</option>
+                    <option value="ter">Tercer semestre</option>
+                    <option value="cua">Cuarto semestre</option>
+                    <option value="qui">Quinto semestre</option>
+                    <option value="sex">Sexto semestre</option>
+                    <option value=" " selected="selected">Selecciona semestre...</option>
+                </select>
+            </div><br>
+            <div>Actividades extracurriculares: <br>
+                <input type="checkbox" id="Dibujo" name="extracurriculares" value="Dibujo">
+                <label for="Dibujo">Dibujo</label><br>
+                <input type="checkbox" id="Futbol" name="extracurriculares" value="Futbol">
+                <label for="Futbol">Futbol</label><br>
+                <input type="checkbox" id="musica" name="extracurriculares" value="musica">
+                <label for="musica">Musica</label><br>
+            </div><br>
+            <div>Sexo:
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">masculino</label><br>
+                <input type="radio" id="femenino" name="sexo" value="femenino">
+                <label for="femenino">Femenino</label><br>
+            </div><br>
+            <div>Terminaste? :
+                <input type="submit" name="submit" value="Enviar informacion">
+                <input type="reset" name="reset" value="Limpiar formulario">
+            </div><br>
+        </fieldset>
+    </form>
+</body>
+</html>
